@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="edusignup.css">
+    <script>
+        function validateForm() {
+            var username = document.form1.username.value;
+            var email = document.form1.email.value;
+            var password = document.form1.password.value;
+            var mobile = document.form1.mobile.value;
+            var address = document.form1.address.value;
+            
+            if (username == "") {
+                alert("Please enter your name");
+                return false;
+            } else if (!/^[a-zA-Z ]+$/.test(username)) {
+                alert("Name should contain only letters");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Please enter your email");
+                return false;
+            }
+
+            if (password == "") {
+                alert("Please enter your password");
+                return false;
+            }
+
+            if (mobile == "" || isNaN(mobile) || mobile.length != 10) {
+                alert("Please enter a valid 10-digit mobile number");
+                return false;
+            }
+
+            if (address == "") {
+                alert("Please enter your address");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Disaster Management System</h1>
+    </header>
+    
+    <nav>
+       
+    </nav>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Enroll Now</h1>
+            <form id="registerForm" name="form1" method="post" action="/edusignup" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <input name="mobile"  placeholder="Mobile No.">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-address-book"></i>
+                        <input name="address" placeholder="Address">
+                    </div>
+                    <div class="input-field1">
+                        Gender: 
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female" checked> Female
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

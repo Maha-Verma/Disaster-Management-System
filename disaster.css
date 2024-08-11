@@ -1,0 +1,66 @@
+
+*{
+    margin:0;
+    padding:0;
+    color:black;
+}
+#navbar{
+    background-color:black;
+    height:80px;
+    display:flex;
+   
+}
+a{ margin-top:15px;
+    margin-right: 200px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+#home{
+    padding-top: 10px;
+    font-size:25px;
+    color:#f08804
+}
+#logo{
+    color: #f08804;
+    font-size: 50px;
+    margin-right: 200px;
+    padding-bottom: 2px;
+   display:inline;
+}
+
+#about{
+  
+   height:300px;
+   width:300px;
+   align:left;
+   padding-left: 200px;
+   padding-top: 50px;
+  
+}
+#updates{
+    background-color: rgb(255, 136, 0); 
+    height:300px;
+    width:300px;
+ }
+ #education{
+    background-color: rgb(0, 255, 68); 
+    height:300px;
+    width:300px;
+ }
+ #workshops{
+    background-color: rgb(221, 255, 0);
+    height:300px;
+    width:300px;
+ }
+ #collaboration{
+    background-color: green; 
+    height:300px;
+    width:300px;
+ }
+ #volunteer{
+    background-color:brown; 
+    height:300px;
+    width:300px;
+ }

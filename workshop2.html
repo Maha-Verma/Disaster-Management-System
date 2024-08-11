@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Workshop Registration</h2>
+        <form action="" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="domain">Select Domain of Interest:</label>
+            <select id="domain" name="domain" required>
+                <option value="" disabled selected>Select your domain</option>
+                <option value="basic_emergency_preparedness">Basic Emergency Preparedness</option>
+                <option value="first_aid_cpr">First Aid and CPR Training</option>
+                <option value="community_response_planning">Community Response Planning</option>
+                <option value="advanced_disaster_response">Advanced Disaster Response</option>
+                <option value="virtual_training">Virtual Training Sessions</option>
+            </select>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

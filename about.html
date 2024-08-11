@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-container {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .container a {
+            color: #fff;
+            background-color: #005f6b;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .tab {
+            padding: 10px 10px;
+            background-color: #eee;
+            margin-right: 0px;
+            margin-left: 50px;
+            margin-top: 0.5%;
+            border-radius: 5px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .active-tab {
+            background-color: #034e88;
+            color: white;
+        }
+
+        .active-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="showContent('earthquake', this)">Earthquakes</div>
+        <div class="tab" onclick="showContent('volcanic', this)">Volcanic Eruptions</div>
+        <div class="tab" onclick="showContent('tsunami', this)">Tsunamis</div>
+        <div class="tab" onclick="showContent('hurricanes', this)">Hurricanes</div>
+        <div class="tab" onclick="showContent('tornadoes', this)">Tornadoes</div>
+     
+        <div class="tab" onclick="showContent('droughts', this)">Droughts</div>
+        <div class="tab" onclick="showContent('wildfires', this)">Wildfires</div>
+        <div class="tab" onclick="showContent('landslides', this)">Landslides</div>
+        <div class="tab" onclick="showContent('avalanches', this)">Avalanches</div>
+    </div>
+
+    <div id="earthquake" class="tab-content active-content">
+        <h2>Earthquakes</h2>
+           
+            
+        <p>Earthquakes are sudden, violent shaking of the ground caused by tectonic movements within the Earth’s crust.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Ground shaking.</li>
+            <li>Cracks appearing in walls or floors.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Movement of tectonic plates.</li>
+            <li>Volcanic activity.</li>
+            <li>Human activities (e.g., mining).</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Structural damage to buildings.</li>
+            <li>Landslides and tsunamis.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Drop, Cover, and Hold On during shaking.</li>
+            <li>Move away from windows and heavy objects.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not run outside during shaking.</li>
+            <li>Avoid using elevators.</li>
+        </ul>
+        <!-- Rest of the content -->
+    </div>
+    <div id="volcanic" class="tab-content">
+        <h2>Volcanic Eruptions</h2>
+        <p>Volcanic eruptions are explosive events where magma, gas, and ash are expelled from a volcano.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Increase in seismic activity.</li>
+            <li>Unusual gas emissions.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Magma rising to the surface.</li>
+            <li>Build-up of pressure within the Earth.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Destruction of habitats and property.</li>
+            <li>Airborne ash affecting air travel and respiratory health.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Evacuate if advised by authorities.</li>
+            <li>Wear masks to avoid inhaling ash.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not stay near a volcano during activity.</li>
+            <li>Avoid low-lying areas due to potential lava flows.</li>
+        </ul>
+        
+     <!-- Rest of the content -->
+    </div>
+    <div id="tsunami" class="tab-content">
+        
+        <h2>Tsunamis</h2>
+        <p>Tsunamis are large ocean waves usually triggered by underwater earthquakes or volcanic eruptions.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Rapid retreat of the sea from the shore.</li>
+            <li>Strong earthquake near coastal areas.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Underwater earthquakes.</li>
+            <li>Volcanic eruptions or landslides under the sea.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Widespread coastal flooding.</li>
+            <li>Massive destruction of property and loss of life.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Move to higher ground immediately after an earthquake.</li>
+            <li>Heed tsunami warnings from authorities.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not go to the beach to watch the waves.</li>
+            <li>Avoid low-lying areas until the all-clear is given.</li>
+        </ul>
+    </div>
+    <div id="hurricanes" class="tab-content">
+            
+        <h2>Hurricanes</h2>
+        <p>Hurricanes are powerful tropical storms characterized by strong winds, heavy rain, and storm surges.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>High winds and heavy rainfall.</li>
+            <li>Storm surge along coastlines.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Warm ocean waters fueling the storm.</li>
+            <li>Low-pressure systems in the atmosphere.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Widespread flooding and wind damage.</li>
+            <li>Disruption of power and communication networks.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Evacuate if instructed to do so by authorities.</li>
+            <li>Secure your home and property.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not stay in low-lying or flood-prone areas.</li>
+            <li>Avoid driving during the storm.</li>
+        </ul>
+    </div>
+    
+    <div id="tornadoes" class="tab-content">
+        
+        <h2>Tornadoes</h2>
+        <p>Tornadoes are rapidly rotating columns of air that extend from thunderstorms to the ground, causing intense damage.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Dark, often greenish skies.</li>
+            <li>Rotating, funnel-shaped cloud.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Severe thunderstorms.</li>
+            <li>Cold and warm air masses colliding.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Severe damage to buildings and infrastructure.</li>
+            <li>Loss of life and injuries.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Take shelter in a basement or interior room.</li>
+            <li>Protect your head and neck from debris.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not stay in mobile homes.</li>
+            <li>Avoid windows during a tornado.</li>
+        </ul>
+    </div>
+    
+    <div id="droughts" class="tab-content">
+        
+        <h2>Droughts</h2>
+        <p>Droughts are prolonged periods of abnormally low rainfall, leading to a shortage of water.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Reduced water levels in rivers and lakes.</li>
+            <li>Dry, cracked soil.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Extended periods of low rainfall.</li>
+            <li>High temperatures and excessive evaporation.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Crop failure and food shortages.</li>
+            <li>Water supply shortages.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Conserve water and use it efficiently.</li>
+            <li>Plan for drought-resistant landscaping.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not waste water on non-essential activities.</li>
+            <li>Avoid planting water-intensive crops.</li>
+        </ul>
+    </div>
+
+    <div id="wildfires" class="tab-content">
+       
+        <h2>Wildfires</h2>
+        <p>Wildfires are uncontrolled fires that spread rapidly through vegetation, often fueled by dry conditions and strong winds.</p>
+        
+        <h3>Signs:</h3>
+        <ul>
+            <li>Visible flames or smoke.</li>
+            <li>Strong smell of burning.</li>
+        </ul>
+        
+        <h3>Causes:</h3>
+        <ul>
+            <li>Lightning strikes.</li>
+            <li>Human activities, such as unattended campfires.</li>
+        </ul>
+        
+        <h3>Impacts:</h3>
+        <ul>
+            <li>Destruction of forests and homes.</li>
+            <li>Air pollution and health hazards.</li>
+        </ul>
+        
+        <h3>Do's:</h3>
+        <ul>
+            <li>Evacuate immediately if instructed.</li>
+            <li>Clear flammable materials from around your home.</li>
+        </ul>
+        
+        <h3>Don'ts:</h3>
+        <ul>
+            <li>Do not start fires during dry conditions.</li>
+            <li>Avoid driving through smoke-filled areas.</li>
+        </ul>
+    </div>
+    
+    <div id="landslides" class="tab-content">
+        
+       
+            <h2>Landslides</h2>
+            <p>Landslides are the movement of rock, earth, or debris down a slope due to gravity, often triggered by rainfall or earthquakes.</p>
+            
+            <h3>Signs:</h3>
+            <ul>
+                <li>Cracks or bulges in the ground, roads, or pavements.</li>
+                <li>Doors or windows that stick or jam for the first time.</li>
+            </ul>
+            
+            <h3>Causes:</h3>
+            <ul>
+                <li>Heavy rainfall or rapid snowmelt.</li>
+                <li>Earthquakes and volcanic activity.</li>
+                <li>Human activities like deforestation and construction.</li>
+            </ul>
+            
+            <h3>Impacts:</h3>
+            <ul>
+                <li>Destruction of property and infrastructure.</li>
+                <li>Blockage of roads and rivers, leading to floods.</li>
+            </ul>
+            
+            <h3>Do's:</h3>
+            <ul>
+                <li>Stay alert to warnings from authorities.</li>
+                <li>Move away from landslide-prone areas during heavy rainfall.</li>
+            </ul>
+            
+            <h3>Don'ts:</h3>
+            <ul>
+                <li>Do not build near steep slopes or at the base of mountains.</li>
+                <li>Avoid driving in landslide-prone areas during heavy rain.</li>
+            </ul>
+       </div>
+    
+       <div id="avalanches" class="tab-content">
+        
+            <h2>Avalanches</h2>
+            <p>Avalanches are rapid flows of snow down a slope, often triggered by natural or human factors.</p>
+            
+            <h3>Signs:</h3>
+            <ul>
+                <li>Loud cracking or "whumping" sounds from the snow.</li>
+                <li>Recent avalanches in the area.</li>
+            </ul>
+            
+            <h3>Causes:</h3>
+            <ul>
+                <li>Heavy snowfall or rapid warming.</li>
+                <li>Wind-drifted snow creating unstable layers.</li>
+                <li>Human activities such as skiing or snowboarding.</li>
+            </ul>
+            
+            <h3>Impacts:</h3>
+            <ul>
+                <li>Burial and suffocation of individuals.</li>
+                <li>Destruction of infrastructure and natural environments.</li>
+            </ul>
+            
+            <h3>Do's:</h3>
+            <ul>
+                <li>Check avalanche forecasts before going into the mountains.</li>
+                <li>Carry essential avalanche safety equipment (beacon, probe, shovel).</li>
+            </ul>
+            
+            <h3>Don'ts:</h3>
+            <ul>
+                <li>Do not enter closed or warning-marked avalanche-prone areas.</li>
+                <li>Avoid stopping or resting in avalanche-prone slopes.</li>
+            </ul>
+    </div>
+    </div>
+    <!-- Rest of the content -->
+  
+    <!-- Add the rest of your content sections here -->
+
+    <script>
+        function showContent(tabId, element) {
+            // Hide all content
+            var contents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active-content');
+            }
+
+            // Remove active-tab class from all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active-tab');
+            }
+
+            // Show the selected content and highlight the tab
+            document.getElementById(tabId).classList.add('active-content');
+            element.classList.add('active-tab');
+        }
+    </script>
+    <div class="container">
+        <a href="index.html">Back</a> 
+    </div>
+    
+</body>
+</html>

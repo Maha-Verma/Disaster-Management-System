@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-container {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background-color: #eee;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .active-tab {
+            background-color: #034e88;
+            color: white;
+        }
+
+        .active-content {
+            display: block;
+        }
+        .container a {
+            color: #fff;
+            background-color: #005f6b;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="showContent('earthquake')">1. Real-Time Communication and Data Exchange</div>
+        <div class="tab" onclick="showContent('volcano')">2. Centralized Resource Coordination</div>
+        <div class="tab" onclick="showContent('tsunami')">3. Joint Planning and Decision Support</div>
+        <div class="tab" onclick="showContent('hurricanes')">4. Training and Knowledge Sharing</div>
+        <div class="tab" onclick="showContent('tornadoes')">5. Analytics and Reporting</div>
+        <div class="tab" onclick="showContent('floods')">6. Policy and Protocol Harmonization</div>
+        <div class="tab" onclick="showContent('droughts')">7. Coordinated Incident Reporting and Response</div>
+        <div class="tab" onclick="showContent('wildfires')">8. Community and Public Involvement</div>
+        <div class="tab" onclick="showContent('landslides')">9. Security and Data Protection</div>
+        
+       
+    </div>
+
+    <div id="earthquake" class="tab-content active-content">
+        <h1>1. Real-Time Communication and Data Exchange</h1><br>
+        <p><h3>Secure Messaging System:</h3> Implement a platform for real-time communication between different organizations, ensuring timely and secure information sharing.<br>
+        <h3> Video Meetings Integration:</h3> Provide tools for video conferencing to facilitate coordination meetings, briefings, and strategy discussions among partners.<br>
+            <h3>Live Information Streams: </h3>Offer real-time data feeds, like weather updates or disaster alerts, accessible to all collaborating entities.<br>
+           <h3> Document Collaboration:</h3> Enable organizations to upload, share, and co-edit important documents such as emergency plans or operational guidelines</p>
+        
+        
+    </div>
+
+    <div id="volcano" class="tab-content">
+        <h1>2. Centralized Resource Coordination</h1><br>
+        <p><h3>Shared Resource Catalog:</h3> Develop a centralized directory where organizations can list available resources such as supplies, equipment, 
+            and volunteers that can be mobilized during a disaster.<br>
+        <h3>  Resource Monitoring:</h3> Include tools for tracking the status and location of resources in real-time, visible to all collaborating parties.<br>
+        <h3> Resource Request Portal: </h3>Create a system where organizations can request needed resources from partners, with the ability to track requests and fulfillments..</p>
+        
+
+    </div>
+
+    <div id="tsunami" class="tab-content">
+        <h1>3. Joint Planning and Decision Support</h1><br>
+        <p><h2>Collaborative Action Plans:</h2> Facilitate the creation, review, and updating of joint action plans,
+             allowing multiple organizations to work together on disaster response strategies.<br>
+             <h2> Task Assignment and Tracking:</h2> Implement a task management system that assigns responsibilities, 
+            tracks progress, and sets deadlines for various organizations involved.<br>
+            <h2> Consensus Building Tools:</h2> Provide features for conducting votes or quick polls among partners to reach agreements on critical decisions.</p>
+     </div>
+    <div id="hurricanes" class="tab-content">
+    <h1>4. Training and Knowledge Sharing</h1><br>
+    <p><h2>Joint Training Programs:</h2> Organize collaborative training sessions or workshops that involve multiple organizations, tracking participation and outcomes.
+    <h2>    Shared Knowledge Repository: </h2> Create a central library of training materials, best practices, and case studies that all partners can access and contribute to.
+    <h2> Mentorship Initiatives:</h2>  Set up mentorship programs where experienced organizations can support and guide newer or smaller partners</h2></p>
+</div>
+<div id="tornadoes" class="tab-content">
+        <h1>5. Analytics and Reporting</h1><br>
+        <p><h2>Shared Analytics Dashboard:</h2> Develop a dashboard that shows key metrics, trends,
+            and insights gathered from all collaborating organizations, helping in data-driven decision-making.<br>
+        <h2>  Automated Reporting:</h2> Provide tools that generate comprehensive reports on disaster response activities, resource usage, and collaboration outcomes.<br>
+    <h2>  Data Visualization: </h2>Use charts, maps, and other visual tools to help organizations analyze data together and identify patterns.</p>
+        
+    </div>
+    <div id="floods" class="tab-content">
+        <h1>6.Policy and Protocol Harmonization</h1><br>
+        <p><h2>Unified Protocol Repository:</h2> Maintain a shared library of agreed-upon protocols and guidelines to ensure consistent
+             responses across all collaborating organizations.<br>
+        <h2>  Policy Alignment Workshops:</h2> Host workshops aimed at aligning policies and procedures across different organizations,
+         ensuring everyone is on the same page.<br>
+        <h2>Compliance Tools:</h2> Include features that help organizations
+         adhere to relevant laws and regulations during collaborative efforts, such as data sharing agreements.</p>
+</div>
+<div id="droughts" class="tab-content">
+    <h1>7.Coordinated Incident Reporting and Response</h1><br>
+    <p><h2>Unified Incident Reporting:</h2> Implement a system for reporting incidents in a standardized format that
+         all collaborating organizations can access and use.<br>
+    <h2> Coordinated Response Platform: </h2>Create a central platform where organizations
+     can coordinate their response efforts, assign roles, and share updates.<br>
+    <h2> Post-Event Reviews:</h2> Provide tools for conducting after-action reviews, 
+    allowing partners to document lessons learned and identify areas for improvement.</p>
+    </div>
+   <div id="wildfires" class="tab-content">
+    <h1>8. Community and Public Involvement</h1><br>
+    <p><h2>Public Participation Portal:</h2> Develop a section where the public can engage in disaster response, 
+        such as reporting incidents, volunteering, or donating resources.<br>
+    <h2>  Community Feedback Mechanism:</h2> Set up tools for gathering feedback
+     from the community on the effectiveness of the response, with results shared among partners.<br>
+    <h2>Joint Public Awareness Campaigns: </h2>Coordinate campaigns across multiple organizations to raise public awareness about disaster preparednes
+    s</p>
+    </div>
+
+    <div id="landslides" class="tab-content">
+        <h1>9. Security and Data Protection</h1><br>
+        <p><h2>Encrypted Communications: </h2>Ensure that all communications between collaborating organizations are encrypted and secure.<br>
+        <h2> Role-Based Access Control: </h2> Implement access controls that limit sensitive information to authorized personnel only.<br>
+    <h2>  Data Sharing Agreements: </h2> Develop tools for managing data-sharing agreements, ensuring compliance with privacy laws and organizational policies</p>
+</div>
+    <!-- Add more content sections as needed -->
+
+    <script>
+        function showContent(tabId) {
+            // Hide all content
+            var contents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active-content');
+            }
+
+            // Remove active-tab class from all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active-tab');
+            }
+
+            // Show the selected content and highlight the tab
+            document.getElementById(tabId).classList.add('active-content');
+            event.currentTarget.classList.add('active-tab');
+        }
+    </script>
+    
+    <div class="container">
+        <a href="index.html">Back</a> 
+    </div>
+
+    
+</body>
+</html>
